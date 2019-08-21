@@ -37,7 +37,7 @@ public class BaseOperations {
 	}
 	
 	public void process(){
-		Map<File, File> isamiInputVsOutputFiles = moduleInfo.getIsamiInputVsOutputFiles();
+		Map<File, File> inputVsOutputFiles = moduleInfo.getIsamiInputVsOutputFiles();
 		isamiInputVsOutputFiles.entrySet().stream().forEach(e -> {
 			Grid tempOutput = parse(e);
 			if(finalOutput==null){
